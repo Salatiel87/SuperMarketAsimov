@@ -21,7 +21,7 @@ app = dash.Dash(external_stylesheets=[dbc.themes.MINTY])
 server = app.server
 
 # =========  Import Data  =========== #
-df_data = pd.read_csv('supermarket_sales.csv')
+df_data = pd.read_csv('assets\\supermarket_sales.csv')
 df_data["Date"] = pd.to_datetime(df_data["Date"])
 
 
